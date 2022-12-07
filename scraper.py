@@ -9,7 +9,6 @@ from destination import Destination
 
 # Website that shows points of interest in Trondheim:
 link = "https://www.trondheim.no/ut-pa-tur/"
-link2 = r"https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-332197/Norge/Tr%C3%B8ndelag/Trondheim/Estenstadhytta"
 
 # Link to how to get selenium working on linux: https://gist.github.com/siumhossain/1aa24622d8fda5053581c87ca6457638
 
@@ -27,8 +26,6 @@ tag_destination_class = r"""class="article-info-header"""
 tag_tags_class        = r"""class="tags-container"""
 tag_tags              = r"""class="tag"""
 
-driver.get(link2)
-time.sleep(10)
 content = driver.page_source
 content = content[content.find(tag_start):]
 
