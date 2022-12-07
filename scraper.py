@@ -4,10 +4,12 @@ from tqdm import tqdm
 import concurrent.futures
 import pickle
 import json
+import time
 from destination import Destination
 
 # Website that shows points of interest in Trondheim:
 link = "https://www.trondheim.no/ut-pa-tur/"
+link2 = r"https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-332197/Norge/Tr%C3%B8ndelag/Trondheim/Estenstadhytta"
 
 # Link to how to get selenium working on linux: https://gist.github.com/siumhossain/1aa24622d8fda5053581c87ca6457638
 
@@ -15,7 +17,7 @@ link = "https://www.trondheim.no/ut-pa-tur/"
 driver_location = '/usr/bin/chromedriver'
 binary_location = '/usr/bin/google-chrome'
 options = webdriver.ChromeOptions()
-options.add_argument('headless') # Makes it so the window doesn't open
+# options.add_argument('headless') # Makes it so the window doesn't open
 options.binary_location = binary_location
 driver = webdriver.Chrome(executable_path=driver_location,options=options)
 
@@ -25,7 +27,8 @@ tag_destination_class = r"""class="article-info-header"""
 tag_tags_class        = r"""class="tags-container"""
 tag_tags              = r"""class="tag"""
 
-driver.get(link)
+driver.get(link2)
+time.sleep(10)
 content = driver.page_source
 content = content[content.find(tag_start):]
 

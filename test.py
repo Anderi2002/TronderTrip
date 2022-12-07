@@ -9,9 +9,10 @@ with open("data/destinations.pickle", "rb") as file:
 #     for destination in destinations:
 #         file.write(f"{destination.name}; https://www.google.com/maps/dir/Johan+Dybvads+veg,+Trondheim/{destination.name}\n")
 
-with open("data/test.json", "w") as file:
+with open("data/destinations_info.json", "w") as file:
     dictionary = {f"{destination.name}": \
     {"google_maps_link": f"https://www.google.com/maps/dir/Johan+Dybvads+veg,+Trondheim/{destination.name}", \
+     "yr_link": None,
      "time_walk": None,
      "time_bike": None
      } for destination in destinations}
