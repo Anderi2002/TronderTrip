@@ -4,10 +4,12 @@ import pygame as py
 import numpy as np
 from yr.libyr import Yr # Api for yr
 import pickle
+from field import Field
 
 # Import data of each destination
 with open("data/destinations.pickle", "rb") as file:
     destinations: list[Destination] = pickle.load(file)
+
 
 # Initiate pygame
 py.init()
@@ -16,19 +18,28 @@ screen_size = screen.get_size() # For scaling to different screens
 py.display.set_caption("Destination Finder")
 
 # Colors
+grey = [40 for _ in range(3)]
 black = (0, 0, 0)
 white = (230, 230, 230)
 
 # Fonts
 header = lambda n: py.font.Font('freesansbold.ttf', n)
 
+# Fields
+temperature_field = Field(screen, 100, 300, header(64), "icons/temperature.png", "°C")
+elevation_field = Field(screen, 100, 500, header(64), "icons/snowed-mountains.png", "m")
+distance_field = Field(screen, 100, 700, header(64), "icons/path.png", "km")
 
-def draw_text(destination: Destination, pos: tuple[int, int], font: py.font.Font, color = white) -> None:
-    text = font.render(destination.name, True, color, black)
+def draw_text(destination: Destination, pos: list[int, int], font: py.font.Font, color = black) -> None:
+    text = font.render(destination.name, True, color)
+    textRect = text.get_rect()
+    textRect.width += 10
+    textRect.height += 10
+    textRect.center = pos
+    py.draw.rect(screen, white, textRect, border_radius = 20)
     textRect = text.get_rect()
     textRect.center = pos
     screen.blit(text, textRect)
-    py.draw.rect(screen, white, textRect, 5)
 
 
 def draw_image(destination: Destination, pos: tuple[int, int], scale: float) -> None:
@@ -41,7 +52,7 @@ def draw_image(destination: Destination, pos: tuple[int, int], scale: float) -> 
 
 
 def float_to_coords(x: float, y: float) -> tuple[int, int]:
-    return (int(screen_size[0] * x), int(screen_size[1] * y))
+    return [int(screen_size[0] * x), int(screen_size[1] * y)]
 
 
 def next_destination(_destinations: list[Destination]) -> Destination:
@@ -58,7 +69,7 @@ def main():
     destination = next_destination(remaining_destinations)
     running = True
     while running:
-        screen.fill(black)
+        screen.fill(grey)
         for event in py.event.get():
             if event.type == py.KEYUP:
                 if event.key == py.K_ESCAPE:
@@ -67,6 +78,9 @@ def main():
                     destination = next_destination(remaining_destinations)
         draw_image(destination, float_to_coords(0.7, 0.5), 0.5)
         draw_text(destination, float_to_coords(0.5, 0.1), header(128))
+        temperature_field.draw(-10, white)
+        elevation_field.draw(128, white)
+        distance_field.draw(1.75, white)
         py.display.update()
 
 
