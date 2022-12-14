@@ -2,7 +2,6 @@ from destination import Destination # Is populated with info
 from random import randint
 import pygame as py
 import numpy as np
-from yr.libyr import Yr # Api for yr
 import pickle
 from field import Field
 
@@ -10,15 +9,17 @@ from field import Field
 with open("data/destinations.pickle", "rb") as file:
     destinations: list[Destination] = pickle.load(file)
 
-
 # Initiate pygame
 py.init()
-screen = py.display.set_mode((0, 0), py.FULLSCREEN)
+screen = py.display.set_mode((2560, 1440))
 screen_size = screen.get_size() # For scaling to different screens
-py.display.set_caption("Destination Finder")
+py.display.set_caption("Trondertrip")
+trondertip_icon = py.image.load("icons/trondertrip_icon.png")
+py.display.set_icon(trondertip_icon)
+print(screen_size)
 
 # Colors
-grey = [40 for _ in range(3)]
+grey = (40, 40, 40)
 black = (0, 0, 0)
 white = (230, 230, 230)
 
@@ -71,6 +72,8 @@ def main():
     while running:
         screen.fill(grey)
         for event in py.event.get():
+            if event.type == py.QUIT:
+                running = False
             if event.type == py.KEYUP:
                 if event.key == py.K_ESCAPE:
                     running = False

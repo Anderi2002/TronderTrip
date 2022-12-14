@@ -14,6 +14,8 @@ with open("data/destinations_info.json", "w") as file:
     {"google_maps_link": f"https://www.google.com/maps/dir/Johan+Dybvads+veg,+Trondheim/{destination.name}", \
      "yr_link": None,
      "time_walk": None,
-     "time_bike": None
+     "time_bike": None,
+     "elevation": None,
+     "distance": None
      } for destination in destinations}
     json.dump(dictionary, file, indent=4)

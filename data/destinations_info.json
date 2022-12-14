@@ -2,457 +2,609 @@
     "Estenstadhytta": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Estenstadhytta",
         "yr_link": "https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-332197/Norge/Tr%C3%B8ndelag/Trondheim/Estenstadhytta",
-        "time_walk": null,
-        "time_bike": null
+        "time_walk": 50,
+        "time_bike": 27,
+        "elevation": 178,
+        "distance": 3300
     },
     "Baklidammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Baklidammen",
-        "yr_link": "",
-        "time_walk": null,
-        "time_bike": null
+        "yr_link": "https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-211185/Norge/Tr%C3%B8ndelag/Trondheim/Baklidammen",
+        "time_walk": 108,
+        "time_bike": 45,
+        "elevation": 69,
+        "distance": 8000
     },
     "Holstdammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Holstdammen",
-        "yr_link": "",
-        "time_walk": null,
-        "time_bike": null
+        "yr_link": "https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-211095/Norge/Tr%C3%B8ndelag/Trondheim/Holstdammen",
+        "time_walk": 162,
+        "time_bike": 61,
+        "elevation": 76,
+        "distance": 13000
     },
     "Tusseløypa": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Tusseløypa",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Hestsjøen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Hestsjøen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Nydammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Nydammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Skylark-B": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Skylark-B",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Finn-Pålstuggu": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Finn-Pålstuggu",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Bosbergheia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Bosbergheia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Tjønnstuggu": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Tjønnstuggu",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Lianvatnet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Lianvatnet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Storfurua": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Storfurua",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kråkfjellet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kråkfjellet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Brænnebukta": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Brænnebukta",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Gråkallen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Gråkallen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Rønningen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Rønningen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Skistua": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Skistua",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Damhaugen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Damhaugen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Øysand": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/øysand",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Grønnlia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Grønnlia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Lippes Arboretum": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Lippes Arboretum",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Elsterparken": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Elsterparken",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Våttakammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Våttakammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kilden i Bymarka": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kilden i Bymarka",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Skansenbruen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Skansenbruen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Solemsvåttan": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Solemsvåttan",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Lagmannsseter": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Lagmannsseter",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Litlheia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Litlheia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Helkanseter": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Helkanseter",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Dreiers Minne": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Dreiers Minne",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kyvatnet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kyvatnet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Elgsethytta": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Elgsethytta",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Herbernsdammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Herbernsdammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Haukvatnet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Haukvatnet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Midtsandtangen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Midtsandtangen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Hansbakkfjæra": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Hansbakkfjæra",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Schølberghytta": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Schølberghytta",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Stadsheia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Stadsheia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Tikneppen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Tikneppen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Gråkallen Skileik": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Gråkallen Skileik",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kvistingen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kvistingen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "St. Olavsspranget": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/St. Olavsspranget",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Gråbergan": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Gråbergan",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Driftsveien": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Driftsveien",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Storfossen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Storfossen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Jonsvatnet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Jonsvatnet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Malvikstien": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Malvikstien",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Gamle Bynesvei": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Gamle Bynesvei",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Lauglovatnet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Lauglovatnet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Skirndalshåmmåran": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Skirndalshåmmåran",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Burmaklippen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Burmaklippen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Djupvika": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Djupvika",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Vassfjellet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Vassfjellet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Theisendammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Theisendammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Holstvollen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Holstvollen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Rotvoll": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Rotvoll",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kobberdammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kobberdammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Fjellseter kapell": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Fjellseter kapell",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Stykket": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Stykket",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Fagervika": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Fagervika",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Ladestien": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Ladestien",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Jervfjellet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Jervfjellet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Ilabekken": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Ilabekken",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Lavollen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Lavollen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Kjerringsnippen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Kjerringsnippen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Storheia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Storheia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Leirsjøen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Leirsjøen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Estenstaddammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Estenstaddammen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Korsvika": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Korsvika",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Ringvebukta": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Ringvebukta",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Svahylla": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Svahylla",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Månen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Månen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Skjellbreia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Skjellbreia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Væreholmen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Væreholmen",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Geitfjellet": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Geitfjellet",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     },
     "Herbernheia": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Herbernheia",
         "yr_link": "",
         "time_walk": null,
-        "time_bike": null
+        "time_bike": null,
+        "elevation": null,
+        "distance": null
     }
 }
