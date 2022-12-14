@@ -42,4 +42,3 @@ for name in destinations_info:
 
 with open("data/destinations_info.json", "w") as file:
     json.dump(destinations_info, file, indent=4)
-

@@ -17,7 +17,7 @@ class Field:
         self.icon = py.image.load(icon_link)
         self.unit = unit
 
-        self.data = -1
+        self._data = None
 
         self.text = font.render(self.unit, True, self.black)
         self.box = self.text.get_rect()
@@ -25,13 +25,7 @@ class Field:
             (int(self.icon.get_size()[0] * self.box.height / (self.icon.get_size()[1]) * self.icon_scale), \
                 self.icon_scale * self.box.height))
     
-    def draw(self, data: int | float, background_color: tuple[int, ...]):
-        if data != self.data:
-            self.data = data
-            self.text = self.font.render(f"{data} {self.unit}", True, self.black)
-            text_box: py.rect.Rect = self.text.get_rect()
-            self.box = py.Rect(self.x_pos, self.y_pos, 2 * self.x_offset + \
-                self.icon.get_size()[0] + self.spacing + text_box.width, 2 * self.y_offset + self.icon.get_size()[1])
+    def draw(self, background_color: tuple[int, ...]):
         # Draws background
         py.draw.rect(self.screen, background_color, self.box, border_radius = self.curvature)
         box_copy = copy.copy(self.box)
@@ -43,3 +37,15 @@ class Field:
         box_copy.top += int(self.icon.get_size()[1] / 4)
         # Draw text
         self.screen.blit(self.text, box_copy)
+    
+    @property
+    def data(self) -> int | str:
+        return self._data
+    
+    @data.setter
+    def data(self, data) -> None:
+        self._data = data
+        self.text = self.font.render(f"{data} {self.unit}", True, self.black)
+        text_box: py.rect.Rect = self.text.get_rect()
+        self.box = py.Rect(self.x_pos, self.y_pos, 2 * self.x_offset + \
+            self.icon.get_size()[0] + self.spacing + text_box.width, 2 * self.y_offset + self.icon.get_size()[1])

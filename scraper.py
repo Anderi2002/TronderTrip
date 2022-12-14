@@ -26,6 +26,7 @@ tag_destination_class = r"""class="article-info-header"""
 tag_tags_class        = r"""class="tags-container"""
 tag_tags              = r"""class="tag"""
 
+driver.get(link)
 content = driver.page_source
 content = content[content.find(tag_start):]
 

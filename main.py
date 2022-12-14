@@ -1,9 +1,12 @@
-from destination import Destination # Is populated with info
 from random import randint
 import pygame as py
 import numpy as np
 import pickle
+import json
+from destination import Destination # Is populated with info
 from field import Field
+print("Scraping yr ...")
+from weather_scraper import destinations_info
 
 # Import data of each destination
 with open("data/destinations.pickle", "rb") as file:
@@ -16,7 +19,6 @@ screen_size = screen.get_size() # For scaling to different screens
 py.display.set_caption("Trondertrip")
 trondertip_icon = py.image.load("icons/trondertrip_icon.png")
 py.display.set_icon(trondertip_icon)
-print(screen_size)
 
 # Colors
 grey = (40, 40, 40)
@@ -30,6 +32,7 @@ header = lambda n: py.font.Font('freesansbold.ttf', n)
 temperature_field = Field(screen, 100, 300, header(64), "icons/temperature.png", "°C")
 elevation_field = Field(screen, 100, 500, header(64), "icons/snowed-mountains.png", "m")
 distance_field = Field(screen, 100, 700, header(64), "icons/path.png", "km")
+
 
 def draw_text(destination: Destination, pos: list[int, int], font: py.font.Font, color = black) -> None:
     text = font.render(destination.name, True, color)
@@ -62,6 +65,13 @@ def next_destination(_destinations: list[Destination]) -> Destination:
     index = randint(0, len(_destinations) - 1)
     destination = _destinations[index]
     _destinations.pop(index)
+    # Update fields
+    elevation = destinations_info[destination.name]['elevation']
+    elevation_field.data = int(elevation if elevation else 0)
+    distance = destinations_info[destination.name]['distance']
+    distance_field.data = int(distance if distance else 0) / 10 ** 3
+    temperature = destinations_info[destination.name]['temperature']
+    temperature_field.data = int(temperature if temperature else 0)
     return destination
 
 
@@ -81,9 +91,9 @@ def main():
                     destination = next_destination(remaining_destinations)
         draw_image(destination, float_to_coords(0.7, 0.5), 0.5)
         draw_text(destination, float_to_coords(0.5, 0.1), header(128))
-        temperature_field.draw(-10, white)
-        elevation_field.draw(128, white)
-        distance_field.draw(1.75, white)
+        temperature_field.draw(white)
+        elevation_field.draw(white)
+        distance_field.draw(white)
         py.display.update()
 
 
