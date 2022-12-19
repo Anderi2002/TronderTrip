@@ -3,10 +3,14 @@ import pygame as py
 import numpy as np
 import pickle
 import json
+from time import perf_counter
+from threading import Thread
 from destination import Destination # Is populated with info
 from field import Field
-print("Scraping yr ...")
-from weather_scraper import destinations_info
+from weather_scraper import get_weather
+
+with open("data/destinations_info.json", "r") as file:
+    destinations_info: dict[str: str | int] = json.load(file)
 
 # Import data of each destination
 with open("data/destinations.pickle", "rb") as file:
@@ -59,6 +63,12 @@ def float_to_coords(x: float, y: float) -> tuple[int, int]:
     return [int(screen_size[0] * x), int(screen_size[1] * y)]
 
 
+def update_temperature(name: str) -> None:
+    get_weather(name, destinations_info)
+    temperature = destinations_info[name]['temperature']
+    temperature_field.data = temperature if temperature else "."
+
+
 def next_destination(_destinations: list[Destination]) -> Destination:
     if not _destinations:
         _destinations[:] = destinations
@@ -70,8 +80,8 @@ def next_destination(_destinations: list[Destination]) -> Destination:
     elevation_field.data = int(elevation if elevation else 0)
     distance = destinations_info[destination.name]['distance']
     distance_field.data = int(distance if distance else 0) / 10 ** 3
-    temperature = destinations_info[destination.name]['temperature']
-    temperature_field.data = int(temperature if temperature else 0)
+    temperature_thread = Thread(target = update_temperature, args = (destination.name,))
+    temperature_thread.start()
     return destination
 
 
@@ -103,6 +113,5 @@ if __name__ == '__main__':
 
 # TODO: Find geographic position
 #   - Use google maps to estimate how long it will take
-# TODO: Show temperature in that area
 # TODO: Add buttons
 #   - If accepted, it should send a message/mail with info regarding the trip

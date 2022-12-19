@@ -6,7 +6,7 @@
         "time_bike": 27,
         "elevation": 178,
         "distance": 3300,
-        "temperature": -8
+        "temperature": null
     },
     "Baklidammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Baklidammen",
@@ -15,7 +15,7 @@
         "time_bike": 45,
         "elevation": 69,
         "distance": 8000,
-        "temperature": -6
+        "temperature": null
     },
     "Holstdammen": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Holstdammen",
@@ -24,7 +24,7 @@
         "time_bike": 61,
         "elevation": 76,
         "distance": 13000,
-        "temperature": -5
+        "temperature": null
     },
     "Tussel\u00f8ypa": {
         "google_maps_link": "https://www.google.com/maps/dir/Johan+Dybvads+veg+12,+Trondheim/Tussel\u00f8ypa",
