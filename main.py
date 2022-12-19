@@ -66,7 +66,7 @@ def float_to_coords(x: float, y: float) -> tuple[int, int]:
 def update_temperature(name: str) -> None:
     get_weather(name, destinations_info)
     temperature = destinations_info[name]['temperature']
-    temperature_field.data = temperature if temperature else "."
+    temperature_field.data = temperature if temperature else ""
 
 
 def next_destination(_destinations: list[Destination]) -> Destination:
