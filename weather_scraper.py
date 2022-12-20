@@ -1,11 +1,6 @@
 
 from selenium import webdriver
-from tqdm import tqdm
-import concurrent.futures
-import pickle
-import json
-import time
-from destination import Destination
+from config import driver_location, binary_location
 
 link = "https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-332197/Norge/Tr%C3%B8ndelag/Trondheim/Estenstadhytta"
 
@@ -31,3 +26,17 @@ def get_weather(name: str, destinations_info: dict[str: str | int]) -> None:
         destinations_info[name]['temperature'] = content
     except Exception as e:
         return
+
+
+def get_total_weather(destinations_info: dict[str: str | int]) -> None:
+    for name in destinations_info:
+        try:
+            driver.get(destinations_info[name]['yr_link'])
+            content = driver.page_source
+            content = content[content.index(header) + len(header):]
+            content = content[content.index(r"""class="temperature temperature"""):]
+            content = int(content[content.index(">") + 1:content.index("<")])
+            print(f"{name}: {content}")
+            destinations_info[name]['temperature'] = content
+        except Exception as e:
+            return
