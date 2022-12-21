@@ -21,7 +21,7 @@ def accepted_trip(destination: Destination, destinations_info: dict[str: str | i
         <head></head>
         <body>
             <p>Hei {name}!<br>
-                Dagens turforslag er {destination.name}!<br>
+                Dagens turforslag er <b>{destination.name}</b>!<br>
                 Det er meldt {destinations_info[destination.name]['temperature']} °C.
             </p>
             <p>
@@ -31,6 +31,8 @@ def accepted_trip(destination: Destination, destinations_info: dict[str: str | i
             </p>
             <p>
                 God Tur! <3
+                <img src="{destination.image_url}" alt="Image of {destination.name}">
+            </p>
         </body>
     </html>
     """
