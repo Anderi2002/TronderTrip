@@ -145,9 +145,3 @@ if __name__ == '__main__':
     accept_trip_button = Button(screen, float_to_coords(
         0.4, 0.73), green, 25, accepted_trip)
     main()
-
-
-# TODO: Find geographic position
-#   - Use google maps to estimate how long it will take
-# TODO: Add buttons
-#   - If accepted, it should send a message/mail with info regarding the trip

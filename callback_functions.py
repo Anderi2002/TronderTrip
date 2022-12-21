@@ -7,16 +7,33 @@ from keys import app_password
 def accepted_trip(destination: Destination, destinations_info: dict[str: str | int]) -> None:
     # Construct mail
     subject: str = f"Turforslag - {destination.name}"
+    # Hei {name}!
+    # Dagens turforslag er {destination.name}!
+    # Det er meldt {destinations_info[destination.name]['temperature']} °C.
 
-    body: str = f"""
-    Hei {name}!
-    Dagens tur er {destination.name}!
-    Det er meldt {destinations_info[destination.name]['temperature']} °C.\n
-    Informasjon om turen finner du vedlagt;
-    Google Maps: {destinations_info[destination.name]['google_maps_link']}
-    Yr: {destinations_info[destination.name]['yr_link']}\n
-    God tur!
+    # Informasjon om turen finner du vedlagt;
+    # Google Maps: {destinations_info[destination.name]['google_maps_link']}
+    # Yr: {destinations_info[destination.name]['yr_link']}
+    
+    # God tur! <3
+    body: str = fr"""
+    <html>
+        <head></head>
+        <body>
+            <p>Hei {name}!<br>
+                Dagens turforslag er {destination.name}!<br>
+                Det er meldt {destinations_info[destination.name]['temperature']} °C.
+            </p>
+            <p>
+                Informasjon om turen finner du vedlagt;<br>
+                <a href="{destinations_info[destination.name]['google_maps_link']}">Google Maps - {destination.name}</a><br>
+                <a href="{destinations_info[destination.name]['yr_link']}">Yr - {destination.name}</a>
+            </p>
+            <p>
+                God Tur! <3
+        </body>
+    </html>
     """
 
-    send_mail(subject, body, sender_email, target_email, app_password)
+    send_mail(subject, body, sender_email, target_email, app_password, html = True)
     print(f"Mail sent to {target_email}")

@@ -1,16 +1,22 @@
 
 from email.message import EmailMessage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 import ssl
 import smtplib
 import keys
 
 
-def send_mail(subject: str, body: str, email_sender: str, email_reciever: str, email_app_password: str) -> None:
-    email = EmailMessage()
+def send_mail(subject: str, body: str, email_sender: str, email_reciever: str, email_app_password: str, html: bool = False) -> None:
+    email = MIMEMultipart('alternative')
     email['From'] = email_sender
     email['To'] = email_reciever
     email['Subject'] = subject
-    email.set_content(body)
+    if html:
+        part = MIMEText(body, 'html')
+    else:
+        part = MIMEText(body, 'plain')
+    email.attach(part)
 
     context = ssl.create_default_context()
 
