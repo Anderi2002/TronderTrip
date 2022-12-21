@@ -2,11 +2,13 @@ from destination import Destination
 from mail_bot import send_mail
 from config import target_email, sender_email, name
 from keys import app_password
+from datetime import datetime
 
 
 def accepted_trip(destination: Destination, destinations_info: dict[str: str | int]) -> None:
+    date = ".".join((str(datetime.now().date()).split("-")[::-1]))
     # Construct mail
-    subject: str = f"Turforslag - {destination.name}"
+    subject: str = f"Turforslag - {destination.name} | {date}"
     # Hei {name}!
     # Dagens turforslag er {destination.name}!
     # Det er meldt {destinations_info[destination.name]['temperature']} °C.
@@ -38,4 +40,3 @@ def accepted_trip(destination: Destination, destinations_info: dict[str: str | i
     """
 
     send_mail(subject, body, sender_email, target_email, app_password, html = True)
-    print(f"Mail sent to {target_email}")
