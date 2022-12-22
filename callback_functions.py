@@ -9,15 +9,13 @@ def accepted_trip(destination: Destination, destinations_info: dict[str: str | i
     date = ".".join((str(datetime.now().date()).split("-")[::-1]))
     # Construct mail
     subject: str = f"Turforslag - {destination.name} | {date}"
-    # Hei {name}!
-    # Dagens turforslag er {destination.name}!
-    # Det er meldt {destinations_info[destination.name]['temperature']} °C.
-
-    # Informasjon om turen finner du vedlagt;
-    # Google Maps: {destinations_info[destination.name]['google_maps_link']}
-    # Yr: {destinations_info[destination.name]['yr_link']}
     
-    # God tur! <3
+    rain: int = destinations_info[destination.name]['rain']
+    rain_arg = "Det er ikke meldt noe regn!" if not rain else f"Det er meldt {rain} mm regn"
+    if rain:
+        rain_arg_2 = ", så her kan det være lurt å ha med regnjakke!" if rain > 10 else "."
+        rain_arg += rain_arg_2
+
     body: str = fr"""
     <html>
         <head></head>
@@ -25,6 +23,7 @@ def accepted_trip(destination: Destination, destinations_info: dict[str: str | i
             <p>Hei {name}!<br>
                 Dagens turforslag er <b>{destination.name}</b>!<br>
                 Det er meldt {destinations_info[destination.name]['temperature']} °C.
+                {rain_arg}
             </p>
             <p>
                 Informasjon om turen finner du vedlagt;<br>

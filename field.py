@@ -9,13 +9,14 @@ class Field:
     spacing = 10
     icon_scale = 2
 
-    def __init__(self, screen: py.display, x_pos: int, y_pos: int, font: py.font.Font, icon_link: str, unit: str) -> None:
+    def __init__(self, screen: py.display, x_pos: int, y_pos: int, font: py.font.Font, icon_link: str, unit: str, offset: int = 0) -> None:
         self.screen = screen
         self.x_pos = x_pos
         self.y_pos = y_pos
         self.font: py.font.Font = font
         self.icon = py.image.load(icon_link)
         self.unit = unit
+        self.offset = offset
 
         self._data = None
 
@@ -25,7 +26,7 @@ class Field:
             (int(self.icon.get_size()[0] * self.box.height / (self.icon.get_size()[1]) * self.icon_scale), \
                 self.icon_scale * self.box.height))
     
-    def draw(self, background_color: tuple[int, ...]):
+    def draw(self, background_color: tuple[int, int, int]):
         # Draws background
         py.draw.rect(self.screen, background_color, self.box, border_radius = self.curvature)
         box_copy = copy.copy(self.box)
@@ -44,8 +45,8 @@ class Field:
     
     @data.setter
     def data(self, data) -> None:
-        self._data = data
-        self.text = self.font.render(f"{data} {self.unit}", True, self.black)
+        self._data = " " * self.offset + str(data)
+        self.text = self.font.render(f"{self._data} {self.unit}", True, self.black)
         text_box: py.rect.Rect = self.text.get_rect()
         self.box = py.Rect(self.x_pos, self.y_pos, 2 * self.x_offset + \
             self.icon.get_size()[0] + self.spacing + text_box.width, 2 * self.y_offset + self.icon.get_size()[1])

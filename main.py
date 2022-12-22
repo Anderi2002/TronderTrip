@@ -41,11 +41,11 @@ def header(n): return py.font.Font('freesansbold.ttf', n)
 
 
 # Fields
-temperature_field = Field(screen, 100, 300, header(64),
-                          "icons/temperature.png", "°C")
-elevation_field = Field(screen, 100, 500, header(64),
-                        "icons/snowed-mountains.png", "m")
-distance_field = Field(screen, 100, 700, header(64), "icons/path.png", "km")
+temperature_field = Field(screen, 100, 200, header(64), "icons/temperature.png", "°C")
+rain_field = Field(screen, 100, 400, header(64), "icons/rainy.png", "mm", offset = 1)
+elevation_field = Field(screen, 100, 600, header(64), "icons/snowed-mountains.png", "m")
+distance_field = Field(screen, 100, 800, header(64), "icons/path.png", "km")
+
 
 
 def draw_mail(coords: tuple[int, int]) -> None:
@@ -82,7 +82,9 @@ def update_weather(name: str) -> None:
     try:
         get_weather(name, destinations_info)
         temperature = destinations_info[name]['temperature']
-        temperature_field.data = temperature if temperature else " "
+        temperature_field.data = temperature if temperature is not None else " "
+        rain = destinations_info[name]['rain']
+        rain_field.data = rain if rain is not None else " "
     except Exception:
         return
 
@@ -100,8 +102,11 @@ def next_destination(_destinations: list[Destination]) -> Destination:
     distance_field.data = int(distance if distance else 0) / 10 ** 3
     temperature = destinations_info[destination.name]['temperature']
     temperature_field.data = temperature if temperature else " "
-    temperature_thread = Thread(target=update_weather, args=(destination.name,))
-    temperature_thread.start()
+    rain = destinations_info[destination.name]['rain']
+    rain_field.data = rain if rain else " "
+    weather_thread = Thread(target=update_weather, args=(destination.name,))
+    weather_thread.start()
+
     return destination
 
 
@@ -137,6 +142,7 @@ def main():
         draw_image(destination, float_to_coords(0.7, 0.5), 0.5)
         draw_text(destination, float_to_coords(0.5, 0.1), header(128))
         temperature_field.draw(white)
+        rain_field.draw(white)
         elevation_field.draw(white)
         distance_field.draw(white)
         if mail_sent:
@@ -145,7 +151,6 @@ def main():
             draw_mail(coords)
 
         accept_trip_button.draw(py.mouse.get_pos())
-
         py.display.update()
 
 
@@ -154,5 +159,5 @@ if __name__ == '__main__':
     thread_total_weather.start()
 
     # Mail
-    accept_trip_button = Button(screen, float_to_coords(0.07, 0.73), green, 25, accepted_trip)
+    accept_trip_button = Button(screen, float_to_coords(0.07, 0.73), green, 25, accepted_trip, "icons/check.png")
     main()
